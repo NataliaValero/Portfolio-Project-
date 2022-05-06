@@ -218,10 +218,11 @@ SELECT
 FROM PortfolioProject.dbo.CovidDeaths$ dea
 INNER JOIN PortfolioProject.dbo.CovidVaccinations$ vac
 	ON dea.location = vac.location
-	AND dea.date = vac.date 
+	AND dea.date = vac.date
 WHERE dea.continent IS NOT NULL AND vac.continent IS NOT NULL
 
 SELECT *
 FROM PercentPeopleVaccinated
 
 -- Hello world
+-- this is awesome
